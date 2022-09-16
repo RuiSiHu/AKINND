@@ -11,7 +11,7 @@ Enter the bin directory of mysql through cmd, run:
 
     mysql -h localhost -u root -p
 
-And enter the password used when installing mysql;
+And enter the password used when installing MySQL.
 
 Step1#Create a database.
     
