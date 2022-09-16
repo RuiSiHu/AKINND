@@ -13,7 +13,7 @@ Step1#Create a database first
     CREATE DATABASE WebDataParse CHARACTER SET utf8 COLLATE utf8_general_ci;
 Step2#Using this database to create a table named "OOPUrl" through runing the following command
     create table OOPUrl
-    (Locus3 varchar(10) null COMMENT 'Locus3'
+    (Locus3 varchar(10) null COMMENT 'Locus3' \n
     ,GenBank varchar(20) null COMMENT 'GenBank'
     ,HTMLContent text null COMMENT '内容'
     ,Downloaded int not null COMMENT '已下载'
