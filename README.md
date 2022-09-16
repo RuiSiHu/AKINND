@@ -9,7 +9,7 @@ Extraction code: dlkx) are reuqired to be installed on your Windows system.
 
 Enter the bin directory of mysql through cmd, run "mysql -h localhost -u root -p", and enter the password used when installing mysql;
 
-Step1#Create a database first
+Step1#Create a database
     CREATE DATABASE WebDataParse CHARACTER SET utf8 COLLATE utf8_general_ci;
 Step2#Using this database to create a table named "OOPUrl" through runing the following command
 
@@ -27,3 +27,6 @@ Step2#Using this database to create a table named "OOPUrl" through runing the fo
     ,LinkUrl varchar(255) not null COMMENT '连接'
     ,OOPIndex int not null auto_increment COMMENT '编号'
     , PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
+    
+Step3#Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank number (such as Influenza_A_virus.txt)
+  
