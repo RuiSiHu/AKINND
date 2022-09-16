@@ -21,17 +21,17 @@ Step2#Using this database to create a table named "OOPUrl" through runing the fo
 
     create table OOPUrl
     (Locus3 varchar(10) null COMMENT 'Locus3'
-    ,GenBank varchar(20) null COMMENT 'GenBank'
-    ,HTMLContent text null COMMENT '内容'
-    ,Downloaded int not null COMMENT '已下载'
-    ,Country varchar(50) null COMMENT '国家'
-    ,PHost varchar(100) null COMMENT 'PHost'
+    ,GenBank varchar(50) null COMMENT 'GenBank'
+    ,HTMLContent text null COMMENT 'Content'
+    ,Downloaded int not null COMMENT 'Downloaded'
+    ,Country varchar(50) null COMMENT 'Country'
+    ,PHost varchar(100) null COMMENT 'Host'
     ,Organism varchar(50) null COMMENT 'Organism'
     ,Pubmed varchar(30) null COMMENT 'Pubmed'
-    ,Journal1 varchar(30) null COMMENT 'Journal1'
+    ,Journal1 varchar(30) null COMMENT 'Journal'
     ,Locus2 varchar(10) null COMMENT 'Locus2'
-    ,LinkUrl varchar(255) not null COMMENT '连接'
-    ,OOPIndex int not null auto_increment COMMENT '编号'
+    ,LinkUrl varchar(500) not null COMMENT 'Connect'
+    ,OOPIndex int not null auto_increment COMMENT 'Code'
     , PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
 Step3#Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
