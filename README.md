@@ -10,6 +10,7 @@ Extraction code: dlkx) are reuqired to be installed on your Windows system.
 Enter the bin directory of mysql through cmd, run "mysql -h localhost -u root -p", and enter the password used when installing mysql;
 
 Step1#Create a database
+    
     CREATE DATABASE WebDataParse CHARACTER SET utf8 COLLATE utf8_general_ci;
     
 Step2#Using this database to create a table named "OOPUrl" through runing the following command
