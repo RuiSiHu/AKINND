@@ -7,7 +7,11 @@ Before using AKINND, MySQL software (mysql-5.0.37 version is recommended; downlo
 Extraction code: 0bos) and Navicat Premium 12 (download link: https://pan.baidu.com/s/1aBwHCVSTnyMyRuqdyhh8FA?pwd=dlkx
 Extraction code: dlkx) are reuqired to be installed on your Windows system.
 
-Enter the bin directory of mysql through cmd, run "mysql -h localhost -u root -p", and enter the password used when installing mysql;
+Enter the bin directory of mysql through cmd, run:
+
+mysql -h localhost -u root -p"
+
+and enter the password used when installing mysql;
 
 Step1#Create a database.
     
