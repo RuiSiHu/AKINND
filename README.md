@@ -9,7 +9,7 @@ Extraction code: dlkx) are reuqired to be installed on your Windows system.
 
 Enter the bin directory of mysql through cmd, run:
 
-    mysql -h localhost -u root -p"
+    mysql -h localhost -u root -p
 
 And enter the password used when installing mysql;
 
