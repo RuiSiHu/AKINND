@@ -32,7 +32,7 @@ Step2#Using this database to create a table named "OOPUrl" through runing the fo
     ,Locus2 varchar(10) null COMMENT 'Locus2'
     ,LinkUrl varchar(500) not null COMMENT 'Connect'
     ,OOPIndex int not null auto_increment COMMENT 'Code'
-    , PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
+    ,PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
 Step3#Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
 
