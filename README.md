@@ -11,11 +11,11 @@ Enter the bin directory of mysql through cmd, run:
 
 And enter the password used when installing MySQL.
 
-Step1#Create a database.
+#Step1 Create a database.
     
     CREATE DATABASE WebDataParse CHARACTER SET utf8 COLLATE utf8_general_ci;
     
-Step2#Using this database to create a table named "OOPUrl" through runing the following command.
+#Step2 Using this database to create a table named "OOPUrl" through runing the following command.
 
     create table OOPUrl
     (Locus3 varchar(10) null COMMENT 'Locus3'
@@ -32,6 +32,6 @@ Step2#Using this database to create a table named "OOPUrl" through runing the fo
     ,OOPIndex int not null auto_increment COMMENT 'Code'
     ,PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
-Step3#Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
+#Step3 Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
 
-Step4#Management of database information can be implemented through Navicat software.
+#Step4 Management of database information can be implemented through Navicat software.
