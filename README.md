@@ -36,6 +36,6 @@ And enter the password used when installing MySQL.
     ,OOPIndex int not null auto_increment COMMENT 'Code'
     ,PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
-#Step4 To start the service, import the GenBank IDs (for example, Influenza_A_virus.txt provided in the package) and open WebDataParse.exe located in the WebDataParse\bin\Debug directory.
+#Step4 To start the service, open WebDataParse.exe located in the WebDataParse\bin\Debug directory and import the GenBank IDs (for example, Influenza_A_virus.txt provided in the package).
 
 #Step5 Management of database information can be implemented through Navicat software.
