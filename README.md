@@ -1,9 +1,9 @@
 # Description
  
-AKINND (Acquire Key Information from NCBI Nucleotide Database) is a Spider software written in C# language that can automatically obtain relevant data information from the NCBI nucleotide database. The premise is that a series of GenBank numbers need to be prepared. Through the information provided in the database, such as information like sequence, species, host, reference, journal, sequence length, date, etc., we can quickly query and write to the local MySQL database.
+AKINND (Acquire Key Information from NCBI Nucleotide Database) is a spider software written in the C# language that can automatically retrieve relevant data from the NCBI nucleotide database. The prerequisite for its operation is the preparation of a series of GenBank numbers. By utilizing the information available in the database, such as sequence data, species, host, references, journals, sequence length, and date, among others, AKINND enables quick querying and writing to the local MySQL database.
 
 # Install
-Before using AKINND, MySQL software (mysql-5.0.37 version is recommended; download link: https://pan.baidu.com/s/1tRtJ64ea1z5SKArOclpFYA?pwd=0bos) and Navicat Premium 12 (download link: https://pan.baidu.com/s/1aBwHCVSTnyMyRuqdyhh8FA?pwd=dlkx) are reuqired to be installed on your Windows system.
+To use AKINND, you need to have MySQL software (version mysql-5.0.37 is recommended and can be downloaded at https://pan.baidu.com/s/1tRtJ64ea1z5SKArOclpFYA?pwd=0bos) and Navicat Premium 12 (which can be downloaded at https://pan.baidu.com/s/1aBwHCVSTnyMyRuqdyhh8FA?pwd=dlkx) installed on your Windows system.
 
 Enter the bin directory of mysql through cmd, run:
 
@@ -15,7 +15,11 @@ And enter the password used when installing MySQL.
     
     CREATE DATABASE WebDataParse CHARACTER SET utf8 COLLATE utf8_general_ci;
     
-#Step2 Using this database to create a table named "OOPUrl" through runing the following command.
+#Step2 Switch the creacted database as the following command:
+    
+    use webdataparse;
+    
+#Step3 Using this database to create a table named "OOPUrl" by runing the following command.
 
     create table OOPUrl
     (Locus3 varchar(10) null COMMENT 'Locus3'
@@ -32,6 +36,6 @@ And enter the password used when installing MySQL.
     ,OOPIndex int not null auto_increment COMMENT 'Code'
     ,PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
-#Step3 Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
+#Step4 Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
 
-#Step4 Management of database information can be implemented through Navicat software.
+#Step5 Management of database information can be implemented through Navicat software.
