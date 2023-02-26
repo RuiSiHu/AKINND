@@ -19,7 +19,7 @@ And enter the password used when installing MySQL.
     
     use webdataparse;
     
-#Step3 Using this database to create a table named "OOPUrl" by runing the following command.
+#Step3 Use the database to create a table named "OOPUrl" by runing the following command.
 
     create table OOPUrl
     (Locus3 varchar(10) null COMMENT 'Locus3'
@@ -36,6 +36,6 @@ And enter the password used when installing MySQL.
     ,OOPIndex int not null auto_increment COMMENT 'Code'
     ,PRIMARY KEY(OOPIndex))Type=InNoDB default charset=utf8;
     
-#Step4 Open WebDataParse.exe in the WebDataParse\bin\Debug directory, and start the service by importing the GenBank IDs (such as Influenza_A_virus.txt).
+#Step4 To start the service, import the GenBank IDs (for example, Influenza_A_virus.txt provided in the package) and open WebDataParse.exe located in the WebDataParse\bin\Debug directory.
 
 #Step5 Management of database information can be implemented through Navicat software.
