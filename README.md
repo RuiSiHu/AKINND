@@ -39,3 +39,5 @@ And enter the password used when installing MySQL.
 #Step4 To start the service, open WebDataParse.exe located in the WebDataParse\bin\Debug directory and import the GenBank IDs (for example, Influenza_A_virus.txt provided in the package).
 
 #Step5 Management of database information can be implemented through Navicat software.
+
+Contact: grishu0707@gmail.com
