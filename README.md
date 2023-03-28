@@ -40,4 +40,4 @@ And enter the password used when installing MySQL.
 
 #Step5 Management of database information can be implemented through Navicat software.
 
-Contact: grishu0707@gmail.com
+Contact: grishu0707(@)gmail.com
